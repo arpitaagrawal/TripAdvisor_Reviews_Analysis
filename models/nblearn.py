@@ -7,7 +7,7 @@ import numpy as np
 #hotel_reviews_train_data = read_data.read_data()
 
 
-hotel_reviews_train_data = read_data.training_data[:, [0,2]]
+hotel_reviews_train_data = read_data.read_hotelreviews_selectivefeatures()[:, [0,2]]
 train_label_data = read_data.training_data[:,-1]
 bow_reviews_list = tokenise_data.tokenise_data(hotel_reviews_train_data, ["space_tokenization"])
 
